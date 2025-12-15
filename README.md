@@ -37,3 +37,20 @@ O objetivo principal não foi apenas criar um modelo preditivo, mas construir um
 ```bash
 git clone [https://github.com/seu-usuario/netflix-churn-project.git](https://github.com/seu-usuario/netflix-churn-project.git)
 cd netflix-churn-project
+```
+
+2. Construa a imagem Docker:
+
+```
+docker build -t netflix-churn-model .
+```
+3. Execute o container: 
+
+```
+docker run -p 5000:5000 netflix-churn-model
+```
+
+
+## 📊 Resultados
+
+*Em breve*
