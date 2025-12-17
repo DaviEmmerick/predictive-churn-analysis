@@ -1,2 +1,7 @@
 venv/
+mlruns/
+__pycache__/
+mlartifacts/
+mlflow.db
+*.pyc
 database-refactor.py
