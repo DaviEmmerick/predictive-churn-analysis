@@ -14,7 +14,7 @@ O objetivo principal não foi apenas criar um modelo preditivo, mas construir um
 ## 🚀 Destaques e Tecnologias
 
 * **Análise Exploratória (EDA):** Identificação de padrões de comportamento e definição da variável target (Churn) baseada na inatividade do usuário.
-* **Modelagem Preditiva:** Teste e seleção de algoritmos (ex: Random Forest, XGBoost) para maximizar a métrica de [Inserir sua métrica, ex: Recall/F1-Score].
+* **Modelagem Preditiva:** Teste e seleção de algoritmos (ex: Random Forest, XGBoost) para maximizar a métrica de [F1 Score e ROC].
 * **MLflow Tracking:** Utilizado para registrar parâmetros, métricas e versionar os modelos gerados durante os experimentos.
 * **Docker:** O modelo final foi encapsulado em um container Docker, garantindo que a aplicação de inferência rode de forma isolada e reproduzível em qualquer ambiente.
 
