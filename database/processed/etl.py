@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime as dt
 
-df = pd.read_csv('database/raw/netflix_users.csv')
+df = pd.read_csv('database/raw/netflix_users_corrected.csv')
 
-def process_data(df, churn_threshold=300):
+def process_data(df, churn_threshold=100):
     df = df.copy()
     
     df = df.drop(columns=['User_ID', 'Name'])
@@ -32,5 +32,5 @@ def process_data(df, churn_threshold=300):
     
     return df
 
-df_final = process_data(df, churn_threshold=300) 
+df_final = process_data(df, churn_threshold=100) 
 print(df_final.head())
