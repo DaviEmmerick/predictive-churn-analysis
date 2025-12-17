@@ -5,7 +5,7 @@ from datetime import datetime as dt
 
 df = pd.read_csv('database/raw/netflix_users.csv')
 
-def process_data(df, churn_threshold=180):
+def process_data(df, churn_threshold=300):
     df = df.copy()
     
     df = df.drop(columns=['User_ID', 'Name'])
@@ -32,5 +32,5 @@ def process_data(df, churn_threshold=180):
     
     return df
 
-df_final = process_data(df, churn_threshold=90) 
+df_final = process_data(df, churn_threshold=300) 
 print(df_final.head())
