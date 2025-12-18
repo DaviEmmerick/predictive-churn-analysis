@@ -1,4 +1,4 @@
-# 🎬 Netflix Churn Prediction: End-to-End Pipeline
+# 🎬 Netflix Churn Prediction: End-to-End Pipeline 
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![MLflow](https://img.shields.io/badge/MLflow-Tracking-green)
@@ -53,4 +53,22 @@ docker run -p 5000:5000 netflix-churn-model
 
 ## 📊 Resultados
 
-*Em breve*
+### 🧠 Metodologia e Descobertas
+
+1. O Problema do Data Leakage (Vazamento de Dados)
+
+- Durante o desenvolvimento, utilizando regressão logística, identificou-se que a variável Subscription_Type apresentava um poder preditivo artificialmente alto (ROC AUC 0.97). 
+
+  - Decisão: Optei por remover esta variável para evitar que o modelo apenas "decorasse" o plano do usuário.
+
+  - Justificativa: Um modelo de Churn útil deve identificar comportamentos (horas assistidas, idade, engajamento) que antecedem a decisão de saída, e não apenas classificar o status atual do contrato.
+
+2. Performance do Modelo Final (Random Forest)
+
+- ROC AUC: 0.71
+
+Conclusão: A superioridade do Random Forest (AUC 0.71) sobre o XGBoost (AUC 0.51) sugere que o dataset possui uma relação sinal-ruído desafiadora, onde a técnica de Bagging do RF ofereceu uma generalização mais robusta contra o overfitting do que a abordagem de Boosting. Além disso, o tempo de tela e a idade são sim informações determinantes.
+
+#### Evidências
+
+![alt text](image.png)
