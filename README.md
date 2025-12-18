@@ -71,10 +71,10 @@ Conclusão: A superioridade do Random Forest (AUC 0.71) sobre o XGBoost (AUC 0.5
 
 #### Evidências
 
-![Tabela de Experimentos MLflow](results/with-and-no-subscription.png)
+![Tabela de Experimentos MLflow](results/with-and-no-subscription-type.png)
 
-![Matrix de confusão com Data Leakage](results/matrix_confusion.png)
+![Matrix de confusão com Data Leakage](results/matrix_confusion_viciada.png)
 
 ![Features Importances (Com Data Leakage)](results/features_importances-viciado.png)
 
-![Features Importances - Fatores Determinantes](results/features_importances-limpo.png)
+![Features Importances - Fatores Determinantes](results/feature_importances-limpo.png)
