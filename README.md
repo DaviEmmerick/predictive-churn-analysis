@@ -69,12 +69,20 @@ docker run -p 5000:5000 netflix-churn-model
 
 Conclusão: A superioridade do Random Forest (AUC 0.71) sobre o XGBoost (AUC 0.51) sugere que o dataset possui uma relação sinal-ruído desafiadora, onde a técnica de Bagging do RF ofereceu uma generalização mais robusta contra o overfitting do que a abordagem de Boosting. Além disso, o tempo de tela e a idade são sim informações determinantes.
 
-#### Evidências
+### Evidências
+
+Random Forest no MLflow - Comparativo
 
 ![Tabela de Experimentos MLflow](results/with-and-no-subscription-type.png)
 
+Matriz de Confusão - Com Data Leakage
+
 ![Matrix de confusão com Data Leakage](results/matrix_confusion_viciada.png)
 
+Features Importances - Com Data Leakage
+
 ![Features Importances (Com Data Leakage)](results/features_importances-viciado.png)
+
+Features Importances - Fatores Determinantes
 
 ![Features Importances - Fatores Determinantes](results/feature_importances-limpo.png)
